@@ -1,0 +1,41 @@
+# Development override — mounts source code for hot reloading.
+# Use with:
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up
+#
+# The backend reloads on every Python file change via uvicorn --reload.
+# The frontend runs the Vite dev server with HMR on port 80 inside the
+# container (mapped to 3000 on the host by the base compose file).
+
+version: '3.9'
+
+services:
+
+  backend:
+    volumes:
+      # Live-mount application source so uvicorn --reload picks up changes
+      # without rebuilding the image.
+      - ./backend/app:/app/app
+      - ./bm25_indexes:/app/bm25_indexes
+    environment:
+      - ENVIRONMENT=development
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --reload
+      --log-level debug
+
+  frontend:
+    build:
+      context: ./frontend
+      # Stop at the builder stage — no nginx needed in dev.
+      # The Vite dev server handles both static assets and HMR.
+      target: builder
+    volumes:
+      # Live-mount src/ so Vite HMR reflects edits instantly.
+      # node_modules stays inside the container to avoid host/container
+      # platform conflicts (e.g. Linux vs macOS native binaries).
+      - ./frontend/src:/app/src
+    command: npm run dev -- --host 0.0.0.0 --port 80
+    environment:
+      - NODE_ENV=development

@@ -1,0 +1,167 @@
+"""
+Hardcoded GDPR test dataset for RAGAS evaluation.
+
+Each entry contains a question, the ground-truth answer, and a list of
+keywords that should appear in the chunks retrieved by the hybrid RAG
+pipeline.  Use this dataset to measure faithfulness, answer relevancy,
+and context recall against a real GDPR document upload.
+"""
+
+GDPR_TEST_DATASET: list[dict] = [
+    {
+        "question": "What is the maximum fine for a GDPR violation?",
+        "ground_truth": (
+            "The maximum fine for serious GDPR violations is up to 20,000,000 EUR "
+            "or 4% of total worldwide annual turnover of the preceding financial year, "
+            "whichever is higher, as specified in Article 83(5)."
+        ),
+        "context_keywords": ["administrative fines", "20 000 000", "4%", "Article 83"],
+    },
+    {
+        "question": "What is the definition of personal data under GDPR?",
+        "ground_truth": (
+            "Personal data means any information relating to an identified or identifiable "
+            "natural person (data subject), who can be identified directly or indirectly by "
+            "reference to an identifier such as a name, identification number, location data, "
+            "or online identifier."
+        ),
+        "context_keywords": ["personal data", "identified", "identifiable", "natural person"],
+    },
+    {
+        "question": "What are the lawful bases for processing personal data?",
+        "ground_truth": (
+            "Article 6 lists six lawful bases: consent of the data subject, performance of a "
+            "contract, compliance with a legal obligation, protection of vital interests, "
+            "performance of a task in the public interest, and legitimate interests of the "
+            "controller or third party."
+        ),
+        "context_keywords": ["lawfulness", "consent", "contract", "legal obligation", "Article 6"],
+    },
+    {
+        "question": "What is the right to erasure under GDPR?",
+        "ground_truth": (
+            "Article 17 grants data subjects the right to obtain erasure of personal data "
+            "without undue delay where the data is no longer necessary, consent is withdrawn, "
+            "the data subject objects to processing, or the data has been unlawfully processed."
+        ),
+        "context_keywords": ["erasure", "right to be forgotten", "Article 17", "undue delay"],
+    },
+    {
+        "question": "How many hours does a controller have to report a data breach?",
+        "ground_truth": (
+            "Under Article 33, a controller must notify the supervisory authority of a personal "
+            "data breach without undue delay and where feasible not later than 72 hours after "
+            "becoming aware of it."
+        ),
+        "context_keywords": ["72 hours", "data breach", "supervisory authority", "Article 33"],
+    },
+    {
+        "question": "When must a Data Protection Officer be appointed?",
+        "ground_truth": (
+            "Article 37 requires appointment of a DPO when processing is carried out by a public "
+            "authority, when core activities require regular and systematic monitoring of data "
+            "subjects on a large scale, or when core activities consist of large scale processing "
+            "of special categories of data."
+        ),
+        "context_keywords": ["data protection officer", "Article 37", "public authority", "large scale"],
+    },
+    {
+        "question": "What is the minimum age for a child to consent to information society services?",
+        "ground_truth": (
+            "Article 8 states that a child must be at least 16 years old to consent to information "
+            "society services. Member States may lower this to a minimum of 13 years by law."
+        ),
+        "context_keywords": ["child", "16 years", "consent", "Article 8", "13 years"],
+    },
+    {
+        "question": "What is the right to data portability?",
+        "ground_truth": (
+            "Article 20 gives data subjects the right to receive their personal data in a "
+            "structured, commonly used and machine-readable format and to transmit it to another "
+            "controller without hindrance, where processing is based on consent or contract and "
+            "carried out by automated means."
+        ),
+        "context_keywords": ["data portability", "machine-readable", "Article 20", "structured"],
+    },
+    {
+        "question": "What special categories of personal data are prohibited from processing?",
+        "ground_truth": (
+            "Article 9 prohibits processing of data revealing racial or ethnic origin, political "
+            "opinions, religious or philosophical beliefs, trade union membership, genetic data, "
+            "biometric data for unique identification, health data, and data concerning sex life "
+            "or sexual orientation."
+        ),
+        "context_keywords": ["special categories", "Article 9", "racial", "biometric", "health data"],
+    },
+    {
+        "question": "What is pseudonymisation under GDPR?",
+        "ground_truth": (
+            "Pseudonymisation means processing personal data in such a manner that it can no "
+            "longer be attributed to a specific data subject without additional information, "
+            "which is kept separately and subject to technical and organisational measures."
+        ),
+        "context_keywords": ["pseudonymisation", "additional information", "separately", "Article 4"],
+    },
+    {
+        "question": "What are the principles of data processing under Article 5?",
+        "ground_truth": (
+            "Article 5 sets out six principles: lawfulness, fairness and transparency, purpose "
+            "limitation, data minimisation, accuracy, storage limitation, and integrity and "
+            "confidentiality. The controller is responsible for demonstrating compliance "
+            "(accountability)."
+        ),
+        "context_keywords": [
+            "Article 5",
+            "lawfulness",
+            "purpose limitation",
+            "data minimisation",
+            "accountability",
+        ],
+    },
+    {
+        "question": "What is a Data Protection Impact Assessment?",
+        "ground_truth": (
+            "Article 35 requires controllers to carry out a DPIA prior to processing where "
+            "processing is likely to result in high risk to natural persons, particularly when "
+            "using new technologies, processing special categories of data at large scale, or "
+            "systematic monitoring of publicly accessible areas on a large scale."
+        ),
+        "context_keywords": ["DPIA", "Article 35", "high risk", "impact assessment", "new technologies"],
+    },
+    {
+        "question": "What conditions govern the transfer of personal data to third countries?",
+        "ground_truth": (
+            "Chapter V (Articles 44–49) restricts transfers to third countries unless the "
+            "European Commission has issued an adequacy decision, or appropriate safeguards are "
+            "in place such as standard contractual clauses or binding corporate rules, or a "
+            "specific derogation under Article 49 applies."
+        ),
+        "context_keywords": [
+            "third country",
+            "adequacy decision",
+            "standard contractual clauses",
+            "Article 44",
+            "Chapter V",
+        ],
+    },
+    {
+        "question": "What is the right of access by the data subject?",
+        "ground_truth": (
+            "Article 15 gives data subjects the right to obtain confirmation from the controller "
+            "as to whether personal data concerning them is being processed, and if so to receive "
+            "a copy of the data along with information on the purposes, categories, recipients, "
+            "retention period, and the existence of rights to rectification or erasure."
+        ),
+        "context_keywords": ["right of access", "Article 15", "copy", "confirmation", "purposes"],
+    },
+    {
+        "question": "What is the distinction between a controller and a processor under GDPR?",
+        "ground_truth": (
+            "A controller (Article 4(7)) is the natural or legal person that determines the "
+            "purposes and means of processing personal data. A processor (Article 4(8)) is a "
+            "natural or legal person that processes personal data on behalf of the controller. "
+            "Processors must act only on documented instructions from the controller."
+        ),
+        "context_keywords": ["controller", "processor", "Article 4", "purposes and means", "instructions"],
+    },
+]

@@ -31,7 +31,28 @@ and returns citation-grounded answers with hallucination detection.
 - Type hints on every function signature
 
 ## Current Phase
-Phase 0 — Initial setup
+Phase 5 — Docker Compose complete
+
+## Docker Commands
+```bash
+# Production
+docker compose up --build           # Build and start all services
+docker compose up --build -d        # Detached mode
+docker compose down                 # Stop all containers
+docker compose down -v              # Stop + delete volumes
+docker compose logs -f backend      # Stream backend logs
+docker compose ps                   # Check container status
+
+# Development (hot reload)
+docker compose -f docker-compose.yml \
+  -f docker-compose.dev.yml up --build
+```
+
+## Service URLs (Docker)
+- Frontend:         http://localhost:3000
+- Backend API:      http://localhost:8000
+- Backend Docs:     http://localhost:8000/docs
+- Qdrant Dashboard: http://localhost:6333/dashboard
 
 ## IMPORTANT — Do Not
 - Do not use synchronous code in FastAPI route handlers

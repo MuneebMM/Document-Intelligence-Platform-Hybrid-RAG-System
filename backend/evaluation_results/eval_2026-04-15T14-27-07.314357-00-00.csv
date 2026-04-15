@@ -1,0 +1,16 @@
+question,overall_score,passed
+What is the maximum fine for a GDPR violation?,0.7508,False
+What is the definition of personal data under GDPR?,1.0,True
+What are the lawful bases for processing personal data?,0.9583,True
+What is the right to erasure under GDPR?,0.9057,True
+How many hours does a controller have to report a data breach?,0.9335,True
+When must a Data Protection Officer be appointed?,1.0,True
+What is the minimum age for a child to consent to information society services?,0.9375,True
+What is the right to data portability?,0.801,False
+What special categories of personal data are prohibited from processing?,0.117,False
+What is pseudonymisation under GDPR?,0.9582,True
+What are the principles of data processing under Article 5?,0.875,False
+What is a Data Protection Impact Assessment?,0.8347,False
+What conditions govern the transfer of personal data to third countries?,0.7525,False
+What is the right of access by the data subject?,0.8526,False
+What is the distinction between a controller and a processor under GDPR?,0.6823,False

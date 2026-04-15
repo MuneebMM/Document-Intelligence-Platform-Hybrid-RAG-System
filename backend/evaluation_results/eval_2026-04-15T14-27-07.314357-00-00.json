@@ -1,0 +1,270 @@
+{
+  "summary": {
+    "total_cases": 15,
+    "passed_cases": 7,
+    "pass_rate": 0.4667,
+    "avg_faithfulness": 0.7658,
+    "avg_answer_relevancy": 0.7826,
+    "avg_context_recall": 0.9,
+    "avg_context_precision": 0.8473,
+    "overall_score": 0.8239,
+    "evaluation_timestamp": "2026-04-15T14:27:07.314357+00:00"
+  },
+  "individual_results": [
+    {
+      "question": "What is the maximum fine for a GDPR violation?",
+      "generated_answer": "Infringements of certain provisions shall be subject to administrative fines up to 10,000,000 EUR, or in the case of an undertaking, up to 2% of the total worldwide annual turnover of the preceding financial year, whichever is higher. Additionally, infringements of other provisions shall be subject to administrative fines up to 20,000,000 EUR, or in the case of an undertaking, up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher.",
+      "ground_truth": "The maximum fine for serious GDPR violations is up to 20,000,000 EUR or 4% of total worldwide annual turnover of the preceding financial year, whichever is higher, as specified in Article 83(5).",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6102666449901263,
+      "context_recall": 1.0,
+      "context_precision": 0.3928571428375,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is the definition of personal data under GDPR?",
+      "generated_answer": "The definition of personal data under GDPR is \"any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.\"",
+      "ground_truth": "Personal data means any information relating to an identified or identifiable natural person (data subject), who can be identified directly or indirectly by reference to an identifier such as a name, identification number, location data, or online identifier.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999,
+      "retrieved_chunks_count": 5,
+      "passed": true
+    },
+    {
+      "question": "What are the lawful bases for processing personal data?",
+      "generated_answer": "Personal data should be processed on the basis of the consent of the data subject concerned or some other legitimate basis, laid down by law, either in this Regulation or in other Union or Member State law as referred to in this Regulation, including the necessity for compliance with the legal obligation to which the controller is subject or the necessity for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract. (41)\n\nProcessing should be lawful where it is necessary in the context of a contract or the intention to enter into a contract. (45)\n\nWhere processing is carried out in accordance with a legal obligation to which the controller is subject or where processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority, the processing should have a basis in Union or Member State law. (46)\n\nThe processing of personal data should also be regarded to be lawful where it is necessary to protect an interest which is essential for the life of the data subject or that of another natural person. (46)",
+      "ground_truth": "Article 6 lists six lawful bases: consent of the data subject, performance of a contract, compliance with a legal obligation, protection of vital interests, performance of a task in the public interest, and legitimate interests of the controller or third party.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0000000000000002,
+      "context_recall": 1.0,
+      "context_precision": 0.8333333332916666,
+      "retrieved_chunks_count": 5,
+      "passed": true
+    },
+    {
+      "question": "What is the right to erasure under GDPR?",
+      "generated_answer": "The right to erasure, also known as the 'right to be forgotten,' allows the data subject to obtain from the controller the erasure of personal data concerning him or her without undue delay. The controller is obligated to erase personal data without undue delay where one of the following grounds applies: (a) the personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed; (b) the data subject withdraws consent on which the processing is based and where there is no other legal ground for the processing; (c) the data subject objects to the processing and there are no overriding legitimate grounds for the processing; (d) the personal data have been unlawfully processed; (e) the personal data have to be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject; or (f) the personal data have been collected in relation to the offer of information society services.\n\nAdditionally, if the controller has made the personal data public and is obliged to erase it, the controller must take reasonable steps to inform other controllers processing the personal data that the data subject has requested the erasure. However, the right to erasure does not apply to the extent that processing is necessary for exercising the right of freedom of expression and information, compliance with a legal obligation, public health interests, archiving purposes, or the establishment, exercise, or defense of legal claims.",
+      "ground_truth": "Article 17 grants data subjects the right to obtain erasure of personal data without undue delay where the data is no longer necessary, consent is withdrawn, the data subject objects to processing, or the data has been unlawfully processed.",
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.8227668660584321,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999,
+      "retrieved_chunks_count": 5,
+      "passed": true
+    },
+    {
+      "question": "How many hours does a controller have to report a data breach?",
+      "generated_answer": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay. The processor shall notify the controller without undue delay after becoming aware of a personal data breach.",
+      "ground_truth": "Under Article 33, a controller must notify the supervisory authority of a personal data breach without undue delay and where feasible not later than 72 hours after becoming aware of it.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.733847248150664,
+      "context_recall": 1.0,
+      "context_precision": 0.99999999995,
+      "retrieved_chunks_count": 5,
+      "passed": true
+    },
+    {
+      "question": "When must a Data Protection Officer be appointed?",
+      "generated_answer": "A Data Protection Officer must be appointed when the processing is carried out by a public authority or body, except for courts acting in their judicial capacity. Additionally, a Data Protection Officer is required when the core activities of the controller or processor consist of processing operations that require regular and systematic monitoring of data subjects on a large scale. Furthermore, a Data Protection Officer must be designated when the core activities involve processing on a large scale of special categories of data or personal data relating to criminal convictions and offences.",
+      "ground_truth": "Article 37 requires appointment of a DPO when processing is carried out by a public authority, when core activities require regular and systematic monitoring of data subjects on a large scale, or when core activities consist of large scale processing of special categories of data.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999,
+      "retrieved_chunks_count": 5,
+      "passed": true
+    },
+    {
+      "question": "What is the minimum age for a child to consent to information society services?",
+      "generated_answer": "The minimum age for a child to consent to information society services is 16 years old. If the child is below the age of 16 years, such processing shall be lawful only if and to the extent that consent is given or authorised by the holder of parental responsibility over the child. Member States may provide by law for a lower age for those purposes, provided that such lower age is not below 13 years.",
+      "ground_truth": "Article 8 states that a child must be at least 16 years old to consent to information society services. Member States may lower this to a minimum of 13 years by law.",
+      "faithfulness": 0.75,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999,
+      "retrieved_chunks_count": 5,
+      "passed": true
+    },
+    {
+      "question": "What is the right to data portability?",
+      "generated_answer": "The right to data portability allows the data subject to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format. The data subject also has the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where the processing is based on consent or on a contract and is carried out by automated means. In exercising this right, the data subject shall have the right to have the personal data transmitted directly from one controller to another, where technically feasible.",
+      "ground_truth": "Article 20 gives data subjects the right to receive their personal data in a structured, commonly used and machine-readable format and to transmit it to another controller without hindrance, where processing is based on consent or contract and carried out by automated means.",
+      "faithfulness": 0.36363636363636365,
+      "answer_relevancy": 0.8402733930883629,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What special categories of personal data are prohibited from processing?",
+      "generated_answer": "I cannot confidently answer this question based on the provided documents. Answer polarity mismatch — question asks about 'prohibited' but answer describes 'allowed' (the opposite extreme). The documents do contain related information — please rephrase your question or ask about what the documents explicitly state.",
+      "ground_truth": "Article 9 prohibits processing of data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data for unique identification, health data, and data concerning sex life or sexual orientation.",
+      "faithfulness": 0.14285714285714285,
+      "answer_relevancy": 0.0,
+      "context_recall": 0.0,
+      "context_precision": 0.32499999998375,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is pseudonymisation under GDPR?",
+      "generated_answer": "The application of pseudonymisation to personal data can reduce the risks to the data subjects concerned and help controllers and processors to meet their data-protection obligations. The explicit introduction of ‘pseudonymisation’ in this Regulation is not intended to preclude any other measures of data protection. Personal data which have undergone pseudonymisation, which could be attributed to a natural person by the use of additional information, should be considered to be information on an identifiable natural person.",
+      "ground_truth": "Pseudonymisation means processing personal data in such a manner that it can no longer be attributed to a specific data subject without additional information, which is kept separately and subject to technical and organisational measures.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8329003988021267,
+      "context_recall": 1.0,
+      "context_precision": 0.99999999995,
+      "retrieved_chunks_count": 5,
+      "passed": true
+    },
+    {
+      "question": "What are the principles of data processing under Article 5?",
+      "generated_answer": "The principles of data processing under Article 5 are as follows:\n\n1. Personal data shall be processed lawfully, fairly, and in a transparent manner in relation to the data subject ('lawfulness, fairness and transparency').\n2. Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes, or statistical purposes shall not be considered incompatible with the initial purposes ('purpose limitation').\n3. Personal data shall be adequate, relevant, and limited to what is necessary in relation to the purposes for which they are processed ('data minimisation').\n4. Personal data shall be accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay ('accuracy').\n5. Personal data shall be kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes, or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject ('storage limitation').\n6. Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction, or damage, using appropriate technical or organisational measures ('integrity and confidentiality').",
+      "ground_truth": "Article 5 sets out six principles: lawfulness, fairness and transparency, purpose limitation, data minimisation, accuracy, storage limitation, and integrity and confidentiality. The controller is responsible for demonstrating compliance (accountability).",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.5,
+      "context_precision": 0.99999999998,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is a Data Protection Impact Assessment?",
+      "generated_answer": "A Data Protection Impact Assessment (DPIA) is required when a type of processing is likely to result in a high risk to the rights and freedoms of natural persons, particularly when using new technologies. The controller must carry out this assessment prior to the processing and it may address a set of similar processing operations that present similar high risks.\n\nThe DPIA must include a systematic description of the envisaged processing operations and the purposes of the processing, an assessment of the necessity and proportionality of the processing operations in relation to the purposes, an assessment of the risks to the rights and freedoms of data subjects, and the measures envisaged to address the risks.\n\nIn cases where the DPIA indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk, the controller must consult the supervisory authority prior to processing.",
+      "ground_truth": "Article 35 requires controllers to carry out a DPIA prior to processing where processing is likely to result in high risk to natural persons, particularly when using new technologies, processing special categories of data at large scale, or systematic monitoring of publicly accessible areas on a large scale.",
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.4388284626333369,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999666667,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What conditions govern the transfer of personal data to third countries?",
+      "generated_answer": "A transfer of personal data to a third country or an international organisation may take place only if the controller or processor has provided appropriate safeguards, and on condition that enforceable data subject rights and effective legal remedies for data subjects are available. In the absence of an adequacy decision or appropriate safeguards, a transfer shall take place only under specific conditions, such as explicit consent from the data subject, necessity for contract performance, or important reasons of public interest. The Commission may decide that a third country ensures an adequate level of protection, which would allow for transfers without specific authorisation.",
+      "ground_truth": "Chapter V (Articles 44–49) restricts transfers to third countries unless the European Commission has issued an adequacy decision, or appropriate safeguards are in place such as standard contractual clauses or binding corporate rules, or a specific derogation under Article 49 applies.",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.8764878358706105,
+      "context_recall": 1.0,
+      "context_precision": 0.6333333333122222,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is the right of access by the data subject?",
+      "generated_answer": "The right of access by the data subject is outlined in Article 15. The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: (a) the purposes of the processing; (b) the categories of personal data concerned; (c) the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations; (d) where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period; (e) the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing; (f) the right to lodge a complaint with a supervisory authority; (g) where the personal data are not collected from the data subject, any available information as to their source; (h) the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject. Where personal data are transferred to a third country or to an international organisation, the data subject shall have the right to be informed of the appropriate safeguards pursuant to Article 46 relating to the transfer.",
+      "ground_truth": "Article 15 gives data subjects the right to obtain confirmation from the controller as to whether personal data concerning them is being processed, and if so to receive a copy of the data along with information on the purposes, categories, recipients, retention period, and the existence of rights to rectification or erasure.",
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.7437414477414254,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999666667,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is the distinction between a controller and a processor under GDPR?",
+      "generated_answer": "A controller is defined as an entity that determines the purposes and means of processing personal data. In contrast, a processor is an entity that processes personal data on behalf of the controller.\n\nThe controller is responsible for ensuring that the processing meets the requirements of the GDPR and protects the rights of the data subjects. The processor, on the other hand, must provide sufficient guarantees to implement appropriate technical and organizational measures to meet these requirements.\n\nAdditionally, the processor must act only on documented instructions from the controller, unless required to do otherwise by Union or Member State law.",
+      "ground_truth": "A controller (Article 4(7)) is the natural or legal person that determines the purposes and means of processing personal data. A processor (Article 4(8)) is a natural or legal person that processes personal data on behalf of the controller. Processors must act only on documented instructions from the controller.",
+      "faithfulness": 0.36363636363636365,
+      "answer_relevancy": 0.8404318333282949,
+      "context_recall": 1.0,
+      "context_precision": 0.5249999999868751,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    }
+  ],
+  "failed_cases": [
+    {
+      "question": "What is the maximum fine for a GDPR violation?",
+      "generated_answer": "Infringements of certain provisions shall be subject to administrative fines up to 10,000,000 EUR, or in the case of an undertaking, up to 2% of the total worldwide annual turnover of the preceding financial year, whichever is higher. Additionally, infringements of other provisions shall be subject to administrative fines up to 20,000,000 EUR, or in the case of an undertaking, up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher.",
+      "ground_truth": "The maximum fine for serious GDPR violations is up to 20,000,000 EUR or 4% of total worldwide annual turnover of the preceding financial year, whichever is higher, as specified in Article 83(5).",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6102666449901263,
+      "context_recall": 1.0,
+      "context_precision": 0.3928571428375,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is the right to data portability?",
+      "generated_answer": "The right to data portability allows the data subject to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format. The data subject also has the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where the processing is based on consent or on a contract and is carried out by automated means. In exercising this right, the data subject shall have the right to have the personal data transmitted directly from one controller to another, where technically feasible.",
+      "ground_truth": "Article 20 gives data subjects the right to receive their personal data in a structured, commonly used and machine-readable format and to transmit it to another controller without hindrance, where processing is based on consent or contract and carried out by automated means.",
+      "faithfulness": 0.36363636363636365,
+      "answer_relevancy": 0.8402733930883629,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What special categories of personal data are prohibited from processing?",
+      "generated_answer": "I cannot confidently answer this question based on the provided documents. Answer polarity mismatch — question asks about 'prohibited' but answer describes 'allowed' (the opposite extreme). The documents do contain related information — please rephrase your question or ask about what the documents explicitly state.",
+      "ground_truth": "Article 9 prohibits processing of data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data for unique identification, health data, and data concerning sex life or sexual orientation.",
+      "faithfulness": 0.14285714285714285,
+      "answer_relevancy": 0.0,
+      "context_recall": 0.0,
+      "context_precision": 0.32499999998375,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What are the principles of data processing under Article 5?",
+      "generated_answer": "The principles of data processing under Article 5 are as follows:\n\n1. Personal data shall be processed lawfully, fairly, and in a transparent manner in relation to the data subject ('lawfulness, fairness and transparency').\n2. Personal data shall be collected for specified, explicit, and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes, or statistical purposes shall not be considered incompatible with the initial purposes ('purpose limitation').\n3. Personal data shall be adequate, relevant, and limited to what is necessary in relation to the purposes for which they are processed ('data minimisation').\n4. Personal data shall be accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay ('accuracy').\n5. Personal data shall be kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes, or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject ('storage limitation').\n6. Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction, or damage, using appropriate technical or organisational measures ('integrity and confidentiality').",
+      "ground_truth": "Article 5 sets out six principles: lawfulness, fairness and transparency, purpose limitation, data minimisation, accuracy, storage limitation, and integrity and confidentiality. The controller is responsible for demonstrating compliance (accountability).",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.5,
+      "context_precision": 0.99999999998,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is a Data Protection Impact Assessment?",
+      "generated_answer": "A Data Protection Impact Assessment (DPIA) is required when a type of processing is likely to result in a high risk to the rights and freedoms of natural persons, particularly when using new technologies. The controller must carry out this assessment prior to the processing and it may address a set of similar processing operations that present similar high risks.\n\nThe DPIA must include a systematic description of the envisaged processing operations and the purposes of the processing, an assessment of the necessity and proportionality of the processing operations in relation to the purposes, an assessment of the risks to the rights and freedoms of data subjects, and the measures envisaged to address the risks.\n\nIn cases where the DPIA indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk, the controller must consult the supervisory authority prior to processing.",
+      "ground_truth": "Article 35 requires controllers to carry out a DPIA prior to processing where processing is likely to result in high risk to natural persons, particularly when using new technologies, processing special categories of data at large scale, or systematic monitoring of publicly accessible areas on a large scale.",
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.4388284626333369,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999666667,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What conditions govern the transfer of personal data to third countries?",
+      "generated_answer": "A transfer of personal data to a third country or an international organisation may take place only if the controller or processor has provided appropriate safeguards, and on condition that enforceable data subject rights and effective legal remedies for data subjects are available. In the absence of an adequacy decision or appropriate safeguards, a transfer shall take place only under specific conditions, such as explicit consent from the data subject, necessity for contract performance, or important reasons of public interest. The Commission may decide that a third country ensures an adequate level of protection, which would allow for transfers without specific authorisation.",
+      "ground_truth": "Chapter V (Articles 44–49) restricts transfers to third countries unless the European Commission has issued an adequacy decision, or appropriate safeguards are in place such as standard contractual clauses or binding corporate rules, or a specific derogation under Article 49 applies.",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.8764878358706105,
+      "context_recall": 1.0,
+      "context_precision": 0.6333333333122222,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is the right of access by the data subject?",
+      "generated_answer": "The right of access by the data subject is outlined in Article 15. The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: (a) the purposes of the processing; (b) the categories of personal data concerned; (c) the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations; (d) where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period; (e) the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing; (f) the right to lodge a complaint with a supervisory authority; (g) where the personal data are not collected from the data subject, any available information as to their source; (h) the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject. Where personal data are transferred to a third country or to an international organisation, the data subject shall have the right to be informed of the appropriate safeguards pursuant to Article 46 relating to the transfer.",
+      "ground_truth": "Article 15 gives data subjects the right to obtain confirmation from the controller as to whether personal data concerning them is being processed, and if so to receive a copy of the data along with information on the purposes, categories, recipients, retention period, and the existence of rights to rectification or erasure.",
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.7437414477414254,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999666667,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    },
+    {
+      "question": "What is the distinction between a controller and a processor under GDPR?",
+      "generated_answer": "A controller is defined as an entity that determines the purposes and means of processing personal data. In contrast, a processor is an entity that processes personal data on behalf of the controller.\n\nThe controller is responsible for ensuring that the processing meets the requirements of the GDPR and protects the rights of the data subjects. The processor, on the other hand, must provide sufficient guarantees to implement appropriate technical and organizational measures to meet these requirements.\n\nAdditionally, the processor must act only on documented instructions from the controller, unless required to do otherwise by Union or Member State law.",
+      "ground_truth": "A controller (Article 4(7)) is the natural or legal person that determines the purposes and means of processing personal data. A processor (Article 4(8)) is a natural or legal person that processes personal data on behalf of the controller. Processors must act only on documented instructions from the controller.",
+      "faithfulness": 0.36363636363636365,
+      "answer_relevancy": 0.8404318333282949,
+      "context_recall": 1.0,
+      "context_precision": 0.5249999999868751,
+      "retrieved_chunks_count": 5,
+      "passed": false
+    }
+  ]
+}

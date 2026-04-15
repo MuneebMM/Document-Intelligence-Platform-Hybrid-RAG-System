@@ -1,0 +1,28 @@
+# Python runtime artefacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment — dependencies come from requirements.txt in the image
+venv/
+.venv/
+
+# Secrets — never bake API keys into the image
+.env
+.env.*
+
+# BM25 indexes are built at runtime from ingested documents
+bm25_indexes/
+
+# Development / editor noise
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Docker build context itself
+Dockerfile
+.dockerignore
