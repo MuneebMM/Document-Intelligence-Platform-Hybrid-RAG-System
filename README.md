@@ -186,7 +186,7 @@ document-intelligence-platform/
 │   └── package.json                  # Frontend dependencies
 ├── docker-compose.yml                # Production orchestration
 ├── docker-compose.dev.yml            # Dev override (hot reload)
-├── CLAUDE.md                         # AI coding conventions
+├── CLAUDE.md                         # Coding conventions
 └── README.md                         # This file
 ```
 

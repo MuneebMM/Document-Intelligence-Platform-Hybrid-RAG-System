@@ -36,7 +36,7 @@ class LLMService:
     self-consistency / hallucination detection.
 
     All chains are built using LangChain LCEL (pipe operator ``|``) as
-    required by CLAUDE.md — no deprecated v1 LLMChain usage.
+    Uses LCEL (pipe operator) — no deprecated v1 LLMChain usage.
     """
 
     def __init__(self, settings: Settings) -> None:
